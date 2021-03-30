@@ -1,10 +1,10 @@
 class Calls(object):
     
     all = 0
-    author = "База заглушка\nСкачайте другие базы, чтобы бомбить"
+    author = "база от Gord1402 "
     
     def __init__(self):
         pass
 
     def send(self, serv, phone):
-        raise     
+        if serv == 0:

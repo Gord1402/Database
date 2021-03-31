@@ -11,7 +11,8 @@ class Calls(object):
         text =  "" 
         _email = ''
         for x in range(12):
-            _email = _email + random.choice(list('123456789qwertyuiopasdfghjklzxcvbnmQWERTYUIOPASDFGHJKLZXCVBNM'))        _phoneVodaonline = '+'+_phone[0]+' ('+_phone[1:4]+') '+_phone[4:7]+'-'+_phone[7:9]+'-'+_phone[9:11] # '+7 (999) 666-99-33'
+            _email = _email + random.choice(list('123456789qwertyuiopasdfghjklzxcvbnmQWERTYUIOPASDFGHJKLZXCVBNM'))    
+        _phoneVodaonline = '+'+_phone[0]+' ('+_phone[1:4]+') '+_phone[4:7]+'-'+_phone[7:9]+'-'+_phone[9:11] # '+7 (999) 666-99-33'
         _phoneBukvaprava = _phone[0]+'('+_phone[1:4]+')'+_phone[4:7]+'-'+_phone[7:9]+'-'+_phone[9:11] # '7(777)777-77-77
         if serv == 1:requests.post('https://www.vodaonline.ru/local/components/shantilab/feedback.form/ajax.php', data={'sessid': '*', 'NAME': _name, 'PHONE': _phoneVodaonline})
         elif serv == 2:requests.post('https://yur-moscow.ru/ajax_call_me.php', data={'param1': _phone, 'param3': _text, 'param2': _name})
